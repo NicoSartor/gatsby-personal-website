@@ -43,6 +43,9 @@ const LinksWrapper = styled.div`
   justify-content: space-around;
   flex: 1;
   max-width: 35%;
+  /* padding: 15px; */
+  /* border-top: 1px solid ${props => props.color}; */
+  opacity: 0.65;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   min-width: 300px; */
@@ -117,7 +120,7 @@ const Header = ({ siteTitle, color, activeLink }) => {
           </Link> */}
         </div>
 
-        <LinksWrapper>
+        <LinksWrapper color={textColor}>
           {siteLinks.links.map(link => {
             if (link.disabled) {
               return

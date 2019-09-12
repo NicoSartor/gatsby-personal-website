@@ -6,7 +6,7 @@ import HowItWorksPage from "../views/howItWorksPage"
 
 const HowItWorks = () => (
   <Layout activeLink="my-works">
-    <SEO title="nicolas kao sartor works" />
+    <SEO title="My Works" />
     <HowItWorksPage />
   </Layout>
 )

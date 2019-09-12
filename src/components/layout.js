@@ -53,6 +53,7 @@ const Layout = ({ children, activeLink, navColor }) => {
             opacity: "0",
             transition: "opacity 200ms ease-in-out",
             height: "100%",
+            background: "#dae0e0",
           }}
           transitionStyles={{
             entering: { opacity: "0" },

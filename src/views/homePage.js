@@ -64,17 +64,17 @@ const Skills = () => (
     </PageSubtitle>
     <Text align="left" color="white">
       Agile Scrum (Certified Scrum Master), Clean Architecture, SEO, Project
-      Management
+      Management, App Deployment, Google Tag Manager
     </Text>
     <PageSubtitle align="left" color="white">
       Other Tecnologies:
     </PageSubtitle>
     <Text align="left" color="white">
-      Gatsby, React Native, Canvas, JWT, Testing (Jest, Mocha, Chai, Cypress),
-      Sockets.io
+      Gatsby, React Native, Python, Canvas, JWT, Testing (Jest, Mocha, Chai,
+      Cypress), Sockets.io
     </Text>
     <PageSubtitle align="left" color="white">
-      Experience with APIs:
+      Experience with Production APIs:
     </PageSubtitle>
     <Text align="left" color="white">
       Stripe, Instagram, Google, Unsplash, Pexels
@@ -133,7 +133,7 @@ const Intro = () => (
       </PageSubtitle>
       <Text align="left" color="white">
         I have solved multiple high complexity problems and built many front-end
-        and backend features for a product used by over 10 million users.
+        and backend features for a product used by over 10 million people.
       </Text>
       <IntroSection>
         <Link

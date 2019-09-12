@@ -4,10 +4,7 @@ export default {
       path: "/",
       name: "home",
     },
-    {
-      path: "/about",
-      name: "about me",
-    },
+
     {
       path: "/my-works",
       name: "my works",

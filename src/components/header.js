@@ -42,7 +42,7 @@ const LinksWrapper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   flex: 1;
-  max-width: 650px;
+  max-width: 35%;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   min-width: 300px; */

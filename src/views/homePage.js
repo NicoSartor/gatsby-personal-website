@@ -3,25 +3,26 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import { PageSubtitle, Text } from "../components/globalStyles"
-import Myself from "../images/Myself.png"
+import Myself from "../images/Myself.jpg"
+import Niko from "../images/Niko.jpg"
+import Jeffrey from "../images/Jeffrey.jpg"
 
 const Container = styled.div`
-  height: 100%;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
 `
 
 const LeftSide = styled.div`
-  height: 100%;
+  min-height: 100%;
   background: #0d282f;
   width: 60%;
-  padding: 36px 80px;
+  padding: 36px 80px 80px 80px;
   box-sizing: border-box;
 `
 
 const RightSide = styled.div`
-  height: 100%;
+  min-height: 100%;
   background: #dae0e0;
   width: 40%;
   box-sizing: border-box;
@@ -63,21 +64,21 @@ const Skills = () => (
       Skills:
     </PageSubtitle>
     <Text align="left" color="white">
-      Agile Scrum (Certified Scrum Master), Clean Architecture, SEO, Project
-      Management, App Deployment, Google Tag Manager
+      Agile Scrum (Certified Scrum Master), Git Version Control, Clean
+      Architecture, SEO, Project Management, App Deployment, Google Tag Manager
     </Text>
     <PageSubtitle align="left" color="white">
       Other Tecnologies:
     </PageSubtitle>
     <Text align="left" color="white">
       Gatsby, React Native, Python, Canvas, JWT, Testing (Jest, Mocha, Chai,
-      Cypress), Sockets.io
+      Cypress), Sockets.io, GraphQL
     </Text>
     <PageSubtitle align="left" color="white">
       Experience with Production APIs:
     </PageSubtitle>
     <Text align="left" color="white">
-      Stripe, Instagram, Google, Unsplash, Pexels
+      Stripe, Instagram, Facebook, Google, Unsplash, Pexels
     </Text>
   </SkillsWraper>
 )
@@ -150,10 +151,86 @@ const Intro = () => (
 const ReferencesWrap = styled.div`
   margin-top: 150px;
 `
+const RefMargin = styled.div`
+  margin-top: 30px;
+`
+
+const RefImage = styled.div`
+  background-image: url(${props => props.src});
+  min-width: 100px;
+  height: 100px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-top: 5px;
+  @media (max-width: 1250px) {
+    margin: 10px auto;
+  }
+`
+
+const RefSection = styled.div`
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+  align-items: top;
+`
+
+const RefP = styled.p`
+  letter-spacing: 1.2px;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 5px;
+`
 
 const References = () => (
   <ReferencesWrap>
     <PageSubtitle>What ohers say about me</PageSubtitle>
+    <RefMargin></RefMargin>
+    <RefSection>
+      <RefImage src={Jeffrey} />
+      <div>
+        <RefP>
+          Nicolas is an innovative thinker and a valued friend at my employment.
+          He is able to quickly grasp new ideas, and quickly iterates that to
+          new code and foundations of a new product.
+        </RefP>
+        <RefP>
+          As scrum master, he was able to hamper down on improving many internal
+          processes along the way and gave the company some new direction as
+          well as defining old ones in an agile fashion. I highly recommend
+          Nicolas as a skilled React developer along with having innate
+          leadership qualities.
+        </RefP>
+        <RefP>- Jeffrey Chang</RefP>
+      </div>
+    </RefSection>
+    <RefSection>
+      <RefImage src={Niko} />
+      <div>
+        <RefP>
+          Nicolas has been a pleasure to work with and would undoubtedly prove
+          valuable on any team. He grasps things very quickly and is never
+          tentative about trying something differently. He works diligently in
+          his own time, especially at dogged attempts to solve complex problems,
+          not because he has to, but because he likes to. He has a great natural
+          talent for logic and maximizing efficiency is always in his frame of
+          scope.
+        </RefP>
+        <RefP>
+          He also has good intuition for design concepts, usability and
+          mobile-first layouts. Nicolas has always been a nice and fun person to
+          code with and demonstrates great soft skills. He is not afraid to say
+          he doesn't know or understand something. He has been one of the
+          brightest people I've worked with and I expect nothing but great
+          things from him moving forward.
+        </RefP>
+        <RefP>- Niko Tzikas</RefP>
+      </div>
+    </RefSection>
   </ReferencesWrap>
 )
 

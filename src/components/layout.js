@@ -52,7 +52,7 @@ const Layout = ({ children, activeLink, navColor }) => {
           defaultStyle={{
             opacity: "0",
             transition: "opacity 200ms ease-in-out",
-            height: "100%",
+            minHeight: "100%",
             background: "#dae0e0",
           }}
           transitionStyles={{

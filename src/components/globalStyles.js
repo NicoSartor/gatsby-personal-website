@@ -17,11 +17,14 @@ export const PageSubtitle = styled.p`
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  text-align: center;
-  margin-top: 30px;
+  text-align: ${props => (props.align ? props.align : "center")};
+  color: ${props => (props.color ? props.color : "black")};
+  margin-top: ${props => (props.marginTop ? props.marginTop : "30px")};
 `
 
 export const Text = styled.p`
   line-height: 1.889;
   letter-spacing: 1.3px;
+  text-align: ${props => (props.align ? props.align : "center")};
+  color: ${props => (props.color ? props.color : "black")};
 `

@@ -51,15 +51,15 @@ const Layout = ({ children, activeLink, navColor }) => {
         <PageTransition
           defaultStyle={{
             opacity: "0",
-            transition: "opacity 300ms ease-in-out",
+            transition: "opacity 200ms ease-in-out",
             height: "100%",
           }}
           transitionStyles={{
-            entering: { opacity: "1" },
+            entering: { opacity: "0" },
             entered: { opacity: "1" },
             exiting: { opacity: "0" },
           }}
-          transitionTime={300}
+          transitionTime={200}
         >
           <MainWrap id="page-wrap">{children}</MainWrap>
         </PageTransition>

@@ -17,7 +17,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-  padding-top: 25px;
+  padding-top: 36px;
   padding-left: 50px;
   padding-right: 50px;
   box-sizing: border-box;
@@ -112,9 +112,9 @@ const Header = ({ siteTitle, color, activeLink }) => {
     return (
       <Container>
         <div>
-          <Link style={{ textDecoration: "none", color: textColor }} to="/">
+          {/* <Link style={{ textDecoration: "none", color: textColor }} to="/">
             <Logo src={textColor === "black" ? LogoBlack : LogoWhite} />
-          </Link>
+          </Link> */}
         </div>
 
         <LinksWrapper>
@@ -151,9 +151,9 @@ const MobileNav = ({ textColor }) => {
         color={textColor}
       />
       <BurgerMenu isMenuOpen={isMenuOpen} />
-      <Link style={{ textDecoration: "none", color: textColor }} to="/">
+      {/* <Link style={{ textDecoration: "none", color: textColor }} to="/">
         <MobileLogo src={textColor === "black" ? LogoBlack : LogoWhite} />
-      </Link>
+      </Link> */}
     </MobileContainer>
   )
 }

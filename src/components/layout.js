@@ -47,11 +47,12 @@ const Layout = ({ children, activeLink, navColor }) => {
         siteTitle={data.site.siteMetadata.title}
         color={navColor}
       />
-      <div id="outer-container">
+      <div id="outer-container" style={{ height: "100%" }}>
         <PageTransition
           defaultStyle={{
             opacity: "0",
             transition: "opacity 300ms ease-in-out",
+            height: "100%",
           }}
           transitionStyles={{
             entering: { opacity: "1" },

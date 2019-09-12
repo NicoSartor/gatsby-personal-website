@@ -11,6 +11,11 @@ const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
 `
 
 const LeftSide = styled.div`
@@ -19,6 +24,10 @@ const LeftSide = styled.div`
   width: 60%;
   padding: 36px 80px 80px 80px;
   box-sizing: border-box;
+  flex: 1;
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
 `
 
 const RightSide = styled.div`
@@ -26,6 +35,10 @@ const RightSide = styled.div`
   background: #dae0e0;
   width: 40%;
   box-sizing: border-box;
+
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
 `
 
 const TitleWrap = styled.div``
@@ -87,6 +100,9 @@ const IntroWrap = styled.div`
   /* max-width: 700px; */
   margin-top: 100px;
   display: flex;
+  @media (max-width: 800px) {
+    display: block;
+  }
 `
 
 const MyImage = styled.div`
@@ -97,13 +113,27 @@ const MyImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10px;
-  @media (max-width: 1250px) {
-    margin: 10px auto;
+  @media (max-width: 1280px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 840px) {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 30px;
   }
 `
 
 const IntroTextWrap = styled.div`
   max-width: 500px;
+  @media (max-width: 900px) {
+    max-width: 450px;
+  }
+  @media (max-width: 840px) {
+    max-width: 400px;
+  }
+  @media (max-width: 1280px) {
+    margin: 0 auto;
+  }
 `
 
 const IntroSection = styled.div`
@@ -164,8 +194,8 @@ const RefImage = styled.div`
   background-size: cover;
   margin-right: 10px;
   margin-top: 10px;
-  @media (max-width: 1250px) {
-    margin: 10px auto;
+  @media (max-width: 1280px) {
+    margin: 10px 10px;
   }
 `
 

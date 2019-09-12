@@ -25,6 +25,9 @@ const ContentContainer = styled.div`
   justify-content: space-evenly;
   margin-bottom: 12px;
   flex-wrap: wrap;
+  @media (max-width: 1280px) {
+    justify-content: left;
+  }
 `
 
 const ContentWrap = styled.div`

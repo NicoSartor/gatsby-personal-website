@@ -20,6 +20,9 @@ export const PageSubtitle = styled.p`
   text-align: ${props => (props.align ? props.align : "center")};
   color: ${props => (props.color ? props.color : "black")};
   margin-top: ${props => (props.marginTop ? props.marginTop : "30px")};
+  @media (max-width: 1200px) {
+    font-size: 17px;
+  }
 `
 
 export const Text = styled.p`
@@ -27,4 +30,8 @@ export const Text = styled.p`
   letter-spacing: 1.3px;
   text-align: ${props => (props.align ? props.align : "center")};
   color: ${props => (props.color ? props.color : "black")};
+  @media (max-width: 1200px) {
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+  }
 `

@@ -14,7 +14,7 @@ const IndexPage = () => {
     })
   }, [])
   return (
-    <Layout navColor={width < 1280 ? "white" : "black"} activeLink="home">
+    <Layout navColor={width < 1000 ? "white" : "black"} activeLink="home">
       <SEO title="Home" />
       <HomePage></HomePage>
     </Layout>

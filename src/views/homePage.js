@@ -13,7 +13,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `
@@ -26,7 +26,14 @@ const LeftSide = styled.div`
   box-sizing: border-box;
   flex: 1;
   @media (max-width: 1280px) {
+    width: 50%;
+  }
+  @media (max-width: 1024px) {
     width: 100%;
+    padding: 36px;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 56px;
   }
 `
 
@@ -35,8 +42,10 @@ const RightSide = styled.div`
   background: #dae0e0;
   width: 40%;
   box-sizing: border-box;
-
   @media (max-width: 1280px) {
+    width: 50%;
+  }
+  @media (max-width: 1024px) {
     width: 100%;
   }
 `
@@ -84,8 +93,8 @@ const Skills = () => (
       Other Tecnologies:
     </PageSubtitle>
     <Text align="left" color="white">
-      Gatsby, React Native, Python, Canvas, JWT, Testing (Jest, Mocha, Chai,
-      Cypress), Sockets.io, GraphQL
+      Gatsby, React Native, Python, Redux, Canvas, JWT, Testing (Jest, Mocha,
+      Chai, Cypress), Sockets.io, GraphQL
     </Text>
     <PageSubtitle align="left" color="white">
       Experience with Production APIs:
@@ -100,6 +109,7 @@ const IntroWrap = styled.div`
   /* max-width: 700px; */
   margin-top: 100px;
   display: flex;
+  justify-content: space-evenly;
   @media (max-width: 800px) {
     display: block;
   }
@@ -107,6 +117,7 @@ const IntroWrap = styled.div`
 
 const MyImage = styled.div`
   background-image: url(${Myself});
+  min-width: 200px;
   width: 200px;
   height: 200px;
   background-position: top;
@@ -125,13 +136,13 @@ const MyImage = styled.div`
 
 const IntroTextWrap = styled.div`
   max-width: 500px;
-  @media (max-width: 900px) {
-    max-width: 450px;
-  }
-  @media (max-width: 840px) {
-    max-width: 400px;
-  }
+  width: 100%;
+
   @media (max-width: 1280px) {
+    max-width: 450px;
+    margin: 0 20px;
+  }
+  @media (max-width: 1000px) {
     margin: 0 auto;
   }
 `
@@ -148,11 +159,18 @@ const IntroSection = styled.div`
     background: white;
     color: #0d282f;
   }
+  @media (max-width: 1280px) {
+    width: 250px;
+  }
 `
 const ButtonText = styled.p`
   line-height: 1.889;
   letter-spacing: 1.3px;
   text-align: ${props => (props.align ? props.align : "center")};
+  @media (max-width: 1280px) {
+    letter-spacing: 1.1px;
+    font-size: 12px;
+  }
 `
 
 const Intro = () => (
@@ -180,6 +198,9 @@ const Intro = () => (
 
 const ReferencesWrap = styled.div`
   margin-top: 150px;
+  @media (max-width: 1000px) {
+    margin-top: 50px;
+  }
 `
 const RefMargin = styled.div`
   margin-top: 30px;
@@ -197,6 +218,10 @@ const RefImage = styled.div`
   @media (max-width: 1280px) {
     margin: 10px 10px;
   }
+  @media (max-width: 1200px) {
+    width: 100px;
+    margin: 0px;
+  }
 `
 
 const RefSection = styled.div`
@@ -207,6 +232,10 @@ const RefSection = styled.div`
   width: 90%;
   margin: 30px auto;
   align-items: top;
+  @media (max-width: 1200px) {
+    padding: 10px;
+    display: block;
+  }
 `
 
 const RefP = styled.p`

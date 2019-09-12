@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 import HowItWorksPage from "../views/howItWorksPage"
 
 const HowItWorks = () => (
-  <Layout activeLink="how-it-works">
-    <SEO title="How It Works" />
+  <Layout activeLink="my-works">
+    <SEO title="nicolas kao sartor works" />
     <HowItWorksPage />
   </Layout>
 )

@@ -163,7 +163,7 @@ const RefImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   @media (max-width: 1250px) {
     margin: 10px auto;
   }
@@ -183,7 +183,7 @@ const RefP = styled.p`
   letter-spacing: 1.2px;
   font-size: 13px;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 10px;
 `
 
 const References = () => (

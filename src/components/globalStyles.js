@@ -2,6 +2,9 @@ import styled from "styled-components"
 
 export const PageContainer = styled.div`
   padding: 130px 50px 70px 50px;
+  @media (max-width: 1000px) {
+    padding: 130px 20px 70px 20px;
+  }
 `
 
 export const PageTitle = styled.h1`

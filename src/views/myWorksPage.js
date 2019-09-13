@@ -95,7 +95,15 @@ const CardSubTitle = styled.h2`
 
 const ProjectDemoWrap = styled.div`
   margin: 10px auto;
-  width: 600px;
+  width: 90%;
+  text-align: center;
+  height: 500px;
+  @media (max-width: 1200px) {
+    height: 400px;
+  }
+  @media (max-width: 1000px) {
+    height: 300px;
+  }
 `
 
 const TextWrap = styled.div`
@@ -117,9 +125,11 @@ const UnumWebApp = () => (
     </CardHeaderWrap>
     <ProjectDemoWrap>
       <iframe
-        width="560"
-        height="315"
-        allowfullscreen
+        width="100%"
+        height="100%"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
         src="https://www.youtube.com/embed/zzCghas69l8"
       ></iframe>
     </ProjectDemoWrap>

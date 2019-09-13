@@ -2,13 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HowItWorksPage from "../views/howItWorksPage"
+import MyWorksPage from "../views/myWorksPage"
 
-const HowItWorks = () => (
+const MyWorks = () => (
   <Layout activeLink="my-works">
     <SEO title="My Works" />
-    <HowItWorksPage />
+    <MyWorksPage />
   </Layout>
 )
 
-export default HowItWorks
+export default MyWorks

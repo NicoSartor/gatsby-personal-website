@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const PageContainer = styled.div`
-  padding: 80px 50px;
+  padding: 130px 50px 70px 50px;
 `
 
 export const PageTitle = styled.h1`
@@ -26,10 +26,11 @@ export const PageSubtitle = styled.p`
 `
 
 export const Text = styled.p`
-  line-height: 1.889;
+  line-height: 1.7;
   letter-spacing: 1.3px;
   text-align: ${props => (props.align ? props.align : "center")};
   color: ${props => (props.color ? props.color : "black")};
+  margin-top: 5px;
   @media (max-width: 1200px) {
     letter-spacing: 1.2px;
     line-height: 1.4;

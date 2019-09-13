@@ -25,6 +25,9 @@ const CardWrapper = styled.div`
   background: white;
   min-height: 450px;
   box-shadow: 12px 20.785px 69px 0px rgba(141, 167, 199, 0.86);
+  @media (max-width: 900px) {
+    width: 90%;
+  }
   @media (max-width: 500px) {
     min-width: 300px;
     padding: 10px;

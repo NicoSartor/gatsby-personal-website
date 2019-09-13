@@ -105,8 +105,9 @@ const SocialSection = () => {
       <SectionTitle>Social</SectionTitle>
       <Block>
         <a
-          hreaf="https://www.linkedin.com/in/nicolas-sartor-13604370/"
+          href="https://www.linkedin.com/in/nicolas-sartor-13604370/"
           style={{ textDecoration: "none", color: "white" }}
+          target="__blank"
         >
           <LinkText>Linkedin</LinkText>
         </a>
@@ -120,8 +121,10 @@ function Footer({ siteName }) {
     <FooterContainer className="footer-container">
       <ContentContainer>
         <ContentWrap>
-          <Block>Phone Number: (323) 614-5568</Block>
-          <Block>Email: nkaosartor@gmail.com</Block>
+          <Block>Phone Number: </Block>
+          <Block>(323) 614-5568</Block>
+          <Block>Email: </Block>
+          <Block>nkaosartor@gmail.com</Block>
         </ContentWrap>
         <NavigationSection />
         <ResourcesSection />

@@ -5,6 +5,9 @@ export const PageContainer = styled.div`
   @media (max-width: 1000px) {
     padding: 130px 20px 70px 20px;
   }
+  @media (max-width: 400px) {
+    padding: 130px 5px 70px 5px;
+  }
 `
 
 export const PageTitle = styled.h1`

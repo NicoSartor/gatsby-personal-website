@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { IconContext } from "react-icons"
-import { IoIosCall, IoIosGitPullRequest, IoIosRibbon } from "react-icons/io"
+import { Link } from "gatsby"
 
 import {
   PageContainer,
@@ -73,8 +72,8 @@ export default function MyWorksPage() {
 
       <CardsContainer>
         <UnumWebApp />
-        <CardTwo />
-        <CardThree />
+        <UnumWebsite />
+        <RocketFinder />
       </CardsContainer>
     </PageContainer>
   )
@@ -118,6 +117,34 @@ const TextWrap = styled.div`
   }
 `
 
+const IntroSection = styled.div`
+  margin-top: 30px;
+  padding: 5px;
+  border: 1px solid black;
+  width: 300px;
+  cursor: pointer;
+  color: black;
+  transition: background 0.4s;
+  margin: 0 auto;
+  &:hover {
+    background: black;
+    color: white;
+  }
+  @media (max-width: 1280px) {
+    width: 250px;
+  }
+`
+
+const ButtonText = styled.p`
+  line-height: 1.889;
+  letter-spacing: 1.3px;
+  text-align: ${props => (props.align ? props.align : "center")};
+  @media (max-width: 1280px) {
+    letter-spacing: 1.1px;
+    font-size: 12px;
+  }
+`
+
 const UnumWebApp = () => (
   <CardWrapper>
     <CardHeaderWrap>
@@ -133,7 +160,15 @@ const UnumWebApp = () => (
         src="https://www.youtube.com/embed/zzCghas69l8"
       ></iframe>
     </ProjectDemoWrap>
-
+    <IntroSection>
+      <a
+        href={"https://dashboard.unum.la/signup"}
+        target="__blank"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <ButtonText>Visit the live project</ButtonText>
+      </a>
+    </IntroSection>
     <CardContentWrap>
       <TextWrap>
         <CardSubTitle>Description</CardSubTitle>
@@ -178,54 +213,104 @@ const UnumWebApp = () => (
   </CardWrapper>
 )
 
-const CardTwo = () => (
+const UnumWebsite = () => (
   <CardWrapper>
     <CardHeaderWrap>
       <ProjectTitle>Unum Website</ProjectTitle>
     </CardHeaderWrap>
-
-    <IconContext.Provider
-      value={{
-        size: "60px",
-        color: "black",
-      }}
-    >
-      <IconWrap>
-        <IoIosGitPullRequest />
-      </IconWrap>
-    </IconContext.Provider>
-    <TextWrap>
-      <Text>
-        During the call, we will discuss your goals and needs. After the call
-        you will receive an outline for a marketing plan designed to grow and
-        create more authority for your practice.
-      </Text>
-    </TextWrap>
+    <ProjectDemoWrap>
+      <iframe
+        width="100%"
+        height="100%"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
+        src="https://www.youtube.com/embed/lfozb0VvY80"
+      ></iframe>
+    </ProjectDemoWrap>
+    <IntroSection>
+      <a
+        href={"https://unum.la"}
+        target="__blank"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <ButtonText>Visit the live project</ButtonText>
+      </a>
+    </IntroSection>
+    <CardContentWrap>
+      <TextWrap>
+        <CardSubTitle>Description</CardSubTitle>
+        <Text align="left">
+          UNUM's Website was a colaboration project with another developer. I
+          was tasked with building a home page that would randomize images and
+          gifs without overlaping, I accomplished it by building collision logic
+          within the page. All pages of the website load below 3.9 seconds. This
+          website was build using Next.js
+        </Text>
+        <Text align="left">
+          On the home page, the animation that controls the opacity of the main
+          title was build using javascript and connects to the scroll bar as a
+          control. No libraries were used.
+        </Text>
+      </TextWrap>
+      <TextWrap>
+        <CardSubTitle>Project Solutions</CardSubTitle>
+        <Text align="left">
+          The website features a blending mode on the navigation as well as page
+          transitions. But the most complex feature is the image randomization
+          on the home page, it has to render the images at random positions
+          without overlap. It also works on mobile views.
+        </Text>
+      </TextWrap>
+    </CardContentWrap>
   </CardWrapper>
 )
 
-const CardThree = () => (
+const RocketFinder = () => (
   <CardWrapper>
     <CardHeaderWrap>
-      <ProjectTitle>3</ProjectTitle>
-      <CardTitle>Win Online</CardTitle>
+      <ProjectTitle>RocketFinder</ProjectTitle>
     </CardHeaderWrap>
-
-    <IconContext.Provider
-      value={{
-        size: "60px",
-        color: "black",
-      }}
-    >
-      <IconWrap>
-        <IoIosRibbon />
-      </IconWrap>
-    </IconContext.Provider>
-    <TextWrap>
-      <Text>
-        After we build the solution tailored to your business, we can
-        continually track your traffic and provide insights for your growth!
-      </Text>
-    </TextWrap>
+    <ProjectDemoWrap>
+      <iframe
+        width="100%"
+        height="100%"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
+        src="https://www.youtube.com/embed/venpHSd_OBY"
+      ></iframe>
+    </ProjectDemoWrap>
+    <IntroSection>
+      <a
+        href={"https://devtrader.github.io/RocketFinder/"}
+        target="__blank"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <ButtonText>Visit the live project</ButtonText>
+      </a>
+    </IntroSection>
+    <CardContentWrap>
+      <TextWrap>
+        <CardSubTitle>Description</CardSubTitle>
+        <Text align="left">
+          This was a personal project, one of my first apps. using jQuery,
+          Canvas and AJAX requests. It retrieves data from a rocket launch api
+          and renders the positions of the launches on a 3d globe (that also
+          works on mobile).
+        </Text>
+        <Text align="left">
+          I was responsible for all the design and code of this entire project.
+        </Text>
+      </TextWrap>
+      <TextWrap>
+        <CardSubTitle>Project Solutions</CardSubTitle>
+        <Text align="left">
+          The WebGL 3d globe used needed to animate, so I made a recursive
+          function that adds to the "center target" of the globe both in X and Y
+          axis. It also has acceleration and deacceleration.
+        </Text>
+      </TextWrap>
+    </CardContentWrap>
   </CardWrapper>
 )

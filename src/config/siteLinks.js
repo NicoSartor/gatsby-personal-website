@@ -9,10 +9,10 @@ export default {
       path: "/my-works",
       name: "my works",
     },
-    {
-      path: "/gallery",
-      name: "gallery",
-    },
+    // {
+    //   path: "/gallery",
+    //   name: "gallery",
+    // },
     {
       path: "/blog",
       name: "blog",

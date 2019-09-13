@@ -92,7 +92,7 @@ const LinkBorder = styled.div`
 
 const DesktopLink = ({ path, name, textColor, activeLink }) => {
   let linkLabel = name.replace(/\s+/g, "-")
-  console.log(activeLink, linkLabel)
+  //   console.log(activeLink, linkLabel)
   return (
     <Link to={path} style={{ textDecoration: "none", color: textColor }}>
       <LinkBorder color={textColor} isActive={activeLink === linkLabel}>

@@ -87,14 +87,15 @@ const Skills = () => (
     </PageSubtitle>
     <Text align="left" color="white">
       Agile Scrum (Certified Scrum Master), Git Version Control, Clean
-      Architecture, SEO, Project Management, App Deployment, Google Tag Manager
+      Architecture, SEO, Project Management, App Deployment, Google Tag Manager,
+      Continuous Integration
     </Text>
     <PageSubtitle align="left" color="white">
       Other Tecnologies:
     </PageSubtitle>
     <Text align="left" color="white">
       Gatsby, React Native, Python, Redux, Canvas, JWT, Testing (Jest, Mocha,
-      Chai, Cypress), Sockets.io, GraphQL
+      Chai, Cypress), Sockets.io, GraphQL, CircleCI
     </Text>
     <PageSubtitle align="left" color="white">
       Experience with Production APIs:

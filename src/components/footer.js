@@ -92,6 +92,9 @@ const ResourcesSection = () => {
   return (
     <ContentWrap>
       <SectionTitle>Resources</SectionTitle>
+      <Block>
+        <LinkText>Coming Soon</LinkText>
+      </Block>
     </ContentWrap>
   )
 }
@@ -100,6 +103,14 @@ const SocialSection = () => {
   return (
     <ContentWrap>
       <SectionTitle>Social</SectionTitle>
+      <Block>
+        <a
+          hreaf="https://www.linkedin.com/in/nicolas-sartor-13604370/"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <LinkText>Linkedin</LinkText>
+        </a>
+      </Block>
     </ContentWrap>
   )
 }
@@ -108,7 +119,10 @@ function Footer({ siteName }) {
   return (
     <FooterContainer className="footer-container">
       <ContentContainer>
-        <ContentWrap>Phone Number</ContentWrap>
+        <ContentWrap>
+          <Block>Phone Number: (323) 614-5568</Block>
+          <Block>Email: nkaosartor@gmail.com</Block>
+        </ContentWrap>
         <NavigationSection />
         <ResourcesSection />
         <SocialSection />

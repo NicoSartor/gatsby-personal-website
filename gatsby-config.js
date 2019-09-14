@@ -47,8 +47,8 @@ module.exports = {
         name: `NKS Legal Marketing`,
         short_name: `NKS`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0d282f`,
+        theme_color: `#0d282f`,
         display: `minimal-ui`,
         icon: `src/images/Logo_Only_HighQuality.png`, // This path is relative to the root of the site.
       },

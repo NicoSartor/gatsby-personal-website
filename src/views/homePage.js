@@ -80,7 +80,7 @@ const Skills = () => (
       Specialization Stack:
     </PageSubtitle>
     <Text align="left" color="white">
-      React, Node, Express, MongoDB
+      React, Node, Express, MongoDB, Typescript, C#
     </Text>
     <PageSubtitle align="left" color="white">
       Skills:
@@ -94,7 +94,7 @@ const Skills = () => (
       Other Tecnologies:
     </PageSubtitle>
     <Text align="left" color="white">
-      Gatsby, React Native, Python, Redux, Canvas, JWT, Testing (Jest, Mocha,
+      Gatsby, Redux, Canvas, JWT, Testing (Jest, Mocha,
       Chai, Cypress), Sockets.io, GraphQL, CircleCI
     </Text>
     <PageSubtitle align="left" color="white">

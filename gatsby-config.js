@@ -16,14 +16,14 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-page-transitions",
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `astaev2fuoib`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `astaev2fuoib`,
+    //     // Learn about environment variables: https://gatsby.dev/env-vars
+    //     // accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

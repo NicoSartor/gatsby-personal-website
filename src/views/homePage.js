@@ -179,11 +179,10 @@ const Intro = () => (
     <MyImage></MyImage>
     <IntroTextWrap>
       <PageSubtitle align="left" color="white" marginTop="2px">
-        I'm not an average engineer.
+        Enterprise and SaaS Engineer
       </PageSubtitle>
       <Text align="left" color="white">
-        I have solved multiple high complexity problems and built many front-end
-        and backend features for a product used by over 10 million people.
+        With 3 years of experience with SaaS and enterprise software, my goal is to continue growing and become an industry expert.
       </Text>
       <IntroSection>
         <Link

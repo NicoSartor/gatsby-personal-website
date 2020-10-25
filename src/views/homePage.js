@@ -182,7 +182,7 @@ const Intro = () => (
         Enterprise and SaaS Engineer
       </PageSubtitle>
       <Text align="left" color="white">
-        With 3 years of experience with SaaS and enterprise software, my goal is to continue growing and become an industry expert.
+        With 3 years of experience with SaaS and enterprise software in highly collaborative agile teams, my goal is to continue growing and become an industry expert.
       </Text>
       <IntroSection>
         <Link

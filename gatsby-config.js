@@ -14,7 +14,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    "gatsby-plugin-page-transitions",
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-web-font-loader",

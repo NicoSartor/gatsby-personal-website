@@ -8,7 +8,6 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import PageTransition from "gatsby-plugin-page-transitions"
 import styled from "styled-components"
 
 import Header from "./header"
@@ -48,22 +47,7 @@ const Layout = ({ children, activeLink, navColor }) => {
         color={navColor}
       />
       <div id="outer-container" style={{ height: "100%" }}>
-        <PageTransition
-          defaultStyle={{
-            opacity: "0",
-            transition: "opacity 200ms ease-in-out",
-            minHeight: "100%",
-            background: "#dae0e0",
-          }}
-          transitionStyles={{
-            entering: { opacity: "0" },
-            entered: { opacity: "1" },
-            exiting: { opacity: "0" },
-          }}
-          transitionTime={200}
-        >
-          <MainWrap id="page-wrap">{children}</MainWrap>
-        </PageTransition>
+        <MainWrap id="page-wrap">{children}</MainWrap>
 
         <Footer siteName={data.site.siteMetadata.title} />
       </div>

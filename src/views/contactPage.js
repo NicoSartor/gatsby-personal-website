@@ -43,8 +43,6 @@ const ContactPage = () => {
         </Text>
         <PageSubtitle>Email</PageSubtitle>
         <Text>nkaosartor@gmail.com</Text>
-        <PageSubtitle>Phone</PageSubtitle>
-        <Text>(323) 614-5568</Text>
       </CardWrapper>
     </PageContainer>
   )

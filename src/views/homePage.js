@@ -74,34 +74,60 @@ const SkillsWraper = styled.div`
   padding-left: 10px;
 `
 
+const SubSegmentTitle = styled(Text)`
+  padding-top: 20px;
+  text-decoration: underline;
+`
+
 const Skills = () => (
   <SkillsWraper>
     <PageSubtitle align="left" color="white">
       Specialization Stack:
     </PageSubtitle>
     <Text align="left" color="white">
-      React, Node, Express, MongoDB, Typescript, C#
+      Typescript, React, Node, Express, MongoDB, Nest.js, Next.js, AWS, MUI
     </Text>
     <PageSubtitle align="left" color="white">
       Skills:
     </PageSubtitle>
     <Text align="left" color="white">
-      Agile Scrum (Certified Scrum Master), Git Version Control, Clean
-      Architecture, SEO, Project Management, App Deployment, Google Tag Manager,
-      Continuous Integration
-    </Text>
-    <PageSubtitle align="left" color="white">
-      Other Tecnologies:
-    </PageSubtitle>
-    <Text align="left" color="white">
-      Gatsby, Redux, Canvas, JWT, Testing (Jest, Mocha,
-      Chai, Cypress), Sockets.io, GraphQL, CircleCI
+      <SubSegmentTitle color="white" bold align="left">
+        Technical Lead:
+      </SubSegmentTitle>
+      <Text color="white" align="left">
+        Led a team of engineers to deliver a product that was distributed
+        globablly. Worked with product managers to define and refine
+        requirements. Delivered solutions that are able to adapt to growth and
+        changes.
+      </Text>
+      <SubSegmentTitle color="white" bold align="left">
+        Software Architecture:
+      </SubSegmentTitle>
+      <Text color="white" align="left">
+        Architected solutions that are scalable and maintainable. Reducing cost
+        of ownership and increasing value over time.
+      </Text>
+      <Text color="white" align="left">
+        Building flexible software that can adapt to changing requirements and
+        fast paced environments.
+      </Text>
+      <SubSegmentTitle color="white" bold align="left">
+        Full Stack Development:
+      </SubSegmentTitle>
+      <Text color="white" align="left">
+        Since 2017, focused on quality and performance. Utilizing agile
+        philosophy and delivering value that builds up over time.
+      </Text>
+      <Text color="white" align="left">
+        Experience migrating to and from: Microservices (point to point and
+        event driven), monorepos and monoliths.
+      </Text>
     </Text>
     <PageSubtitle align="left" color="white">
       Experience with Production APIs:
     </PageSubtitle>
     <Text align="left" color="white">
-      Stripe, Instagram, Facebook, Google, Unsplash, Pexels
+      Tableau, Auth0, Stripe, Instagram, Facebook, Google, Unsplash, Pexels
     </Text>
   </SkillsWraper>
 )
@@ -174,7 +200,7 @@ const ButtonText = styled.p`
   }
 `
 
-const Intro = () => (
+const Intro = ({ year }) => (
   <IntroWrap>
     <MyImage></MyImage>
     <IntroTextWrap>
@@ -182,7 +208,9 @@ const Intro = () => (
         Enterprise and SaaS Engineer
       </PageSubtitle>
       <Text align="left" color="white">
-        With 3 years of experience with SaaS and enterprise software in highly collaborative agile teams, my goal is to continue growing and become an industry expert.
+        With {year} years of experience with software developing and
+        architecting, my goal is to deliver value to the end user and refine
+        teams to be sharp and efficient competitors.
       </Text>
       <IntroSection>
         <Link
@@ -294,6 +322,10 @@ const References = () => (
 )
 
 function HomePage() {
+  const currentYear = new Date().getYear()
+  const yearStarted = new Date("2017-07-01").getYear()
+  const diff = Math.ceil(currentYear - yearStarted)
+
   return (
     <Container>
       <LeftSide>
@@ -301,7 +333,7 @@ function HomePage() {
           <SiteTitle>Nicolas Kao Sartor</SiteTitle>
           <Subtitle>Full Stack Engineer</Subtitle>
         </TitleWrap>
-        <Intro />
+        <Intro year={diff} />
         <Skills />
       </LeftSide>
       <RightSide>

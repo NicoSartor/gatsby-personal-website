@@ -37,6 +37,7 @@ export const Text = styled.p`
   text-align: ${props => (props.align ? props.align : "center")};
   color: ${props => (props.color ? props.color : "black")};
   margin-top: 5px;
+  font-weight: ${props => (props.bold ? "700" : "300")};
   @media (max-width: 1200px) {
     letter-spacing: 1.2px;
     line-height: 1.4;

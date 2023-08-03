@@ -37,12 +37,7 @@ const ContactPage = () => {
       <PageTitle>Contact</PageTitle>
       <CardWrapper>
         <PageSubtitle>How to contact me</PageSubtitle>
-        <Text>
-          I'm always checking my email, if you want to use the phone number,
-          please send a text message I have been getting too many robocalls.
-        </Text>
-        <PageSubtitle>Email</PageSubtitle>
-        <Text>nkaosartor@gmail.com</Text>
+        <Text>Not looking for opportunities at the moment.</Text>
       </CardWrapper>
     </PageContainer>
   )

@@ -121,10 +121,7 @@ function Footer({ siteName }) {
     <FooterContainer className="footer-container">
       <ContentContainer>
         <ContentWrap>
-          <Block>Phone Number: </Block>
-          <Block>(323) 614-5568</Block>
-          <Block>Email: </Block>
-          <Block>nkaosartor@gmail.com</Block>
+
         </ContentWrap>
         <NavigationSection />
         <ResourcesSection />
